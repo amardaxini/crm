@@ -60,7 +60,7 @@ nav ul li a:hover,nav ul li a.active{
  -moz-border-radius:10px;
  border-radius:10px;
  margin:10px;
- min-height: 400px;
+
  color#cecece;
  box-shadow: 1px 0px 1px 1px #aaa,-1px 0px 1px 1px #aaa;
  
@@ -175,6 +175,13 @@ html, body {
 box-shadow: 6px 0px 15px 1px #333,-6px 0px 15px 1px #333;
   margin: 0 auto -35px ; /* the bottom margin is the negative value of the footer's height */
 
+}
+#footer,div.push {
+
+  height: 45px; /* .push must be the same height as .footer */
+}
+#footer p{
+padding:5px;
 }
 table.listing a{
 color:#fff;

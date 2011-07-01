@@ -18,7 +18,7 @@ development:
   database: crm_development
   pool: 5
   username: postgres
-  password: livia!
+  password: 
   host: localhost
   port: 5432
 
@@ -46,7 +46,7 @@ test:
   database: crm_test
   pool: 5
   username: postgres
-  password: livia!
+  password: 
 
 production:
   adapter: postgresql

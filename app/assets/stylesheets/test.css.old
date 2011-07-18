@@ -1,0 +1,188 @@
+
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
+body{
+	/* Setting the default text color, size, page background and a font stack: */
+	font-size:12px;
+	color:#fcfcfc;
+	background-color:#355664;
+	font-family:Arial, Helvetica, sans-serif;
+}
+h1.logo{
+	font-size:36px;
+	padding:15px 0;
+}
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+	/* Giving a display value to the HTML5 rendered elements: */
+	display:block;
+}
+
+nav{
+  margin-top:20px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  background-color:#fff;
+  height:40px;
+}
+nav ul{
+ padding-top:12px;
+}
+nav ul li{
+ 	display:inline;
+  font-size:18px;
+}
+nav ul li a{
+ color:#ececec;
+ text-decoration:none;
+ font-weight:bold;
+ padding:4px 10px;
+ text-transform:uppercase;
+}
+
+nav ul li a:hover,nav ul li a.active{
+ text-decoration:none;
+ background-color:#213E4A;
+ -moz-border-radius:15px;
+ border-radius:15px;
+ color:#ececec;
+}
+
+.content{
+ background-color:#213E4A;
+ -moz-border-radius:10px;
+ border-radius:10px;
+ margin:10px;
+
+ color#cecece;
+ box-shadow: 1px 0px 1px 1px #aaa,-1px 0px 1px 1px #aaa;
+ 
+}
+
+
+
+.line{
+	height:1px;
+	background-color:#24404c;
+	border-bottom:1px solid #416371;
+	margin:1em 0;
+	overflow:hidden;
+}
+#main_content{
+ margin:10px;
+}
+
+div#content form.data-form {
+  margin: 0;
+  padding: 0 20px 20px 20px;
+}
+
+
+div#content form.data-form p, div#content form.data-form div { margin:0; padding: 10px 0 0 0;}
+
+ form.data-form input[type=text],
+ form.data-form textarea,
+ form.data-form input[type=password]
+{
+  padding: 3px;
+  font-size: 16px;
+  color: #444;
+ -moz-border-radius:5px;
+   border-radius:5px;
+}
+
+ form.data-form input[type=text],div#content form.data-form input[type=password],form.data-form input[type=number]{  width: 50%;height:30px; }
+ form.data-form textarea { width: 50%; height: 200px; }
+
+ form.data-form input[type=submit] {
+  font-size: 1.2em;
+  padding: 10px;
+  border-top    : 1px solid #BBB;
+  border-left   : 1px solid #BBB;
+  border-right  : 1px solid #666;
+  border-bottom : 1px solid #666;
+  background-color: #DDD;
+}
+form.data-form label{
+font-size:15px;
+}
+form.big_form label {
+    float: left;
+    display: block;
+    padding: 5px;
+    width: 15%;
+    text-align: left;
+}
+form.big_form div input, form.big_form div textarea, form.big_form div select {
+    margin: 5px;
+    padding: 1px;
+  
+}
+ form.big_form input[type=text],div#content form.data-form input[type=password]{  width: 50%;height:25px; }
+form.big_form textarea { width: 50%; height: 200px; }
+form.big_form div input.submit {
+    width: auto;
+}
+form.big_form div input.wide, form.big_form div textarea.wide {
+    width: 75%;
+}
+form.big_form div input.short, form.big_form div textarea.short {
+    width: 55%;
+    }
+table.listing tr:hover { background-color: #EeEEF4; }
+table.listing tfoot { font-size: 0.9em; color: #666; }
+table.listing tfoot td { border: 0; }
+table.listing tfoot tr:hover { background-color: transparent; }
+
+table.listing th {
+  padding: 5px;
+  background-color: orange;
+  border: 1px solid #DDD;
+}
+
+table.listing td {
+  border: 1px solid #DDD;
+  padding: 3px 5px;
+  display:table-cell;
+}
+
+#sidebar{
+background-color:#213E4A;
+}
+
+/* footer*/
+{
+  margin:0;
+}
+html, body {
+  height: 100%;
+}
+.every-thing{
+
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+
+/*-webkit-box-shadow: 6px 0px 15px 3px #222,-6px 0px 15px 3px #222;*/
+/*-moz-box-shadow: 6px 0px 15px 3px #222,-6px 0px 15px 3px #222;
+box-shadow: 6px 0px 15px 1px #333,-6px 0px 15px 1px #333;*/
+  margin: 0 auto -35px ; /* the bottom margin is the negative value of the footer's height */
+
+}
+#footer,div.push {
+
+  height: 45px; /* .push must be the same height as .footer */
+}
+#footer p{
+padding:5px;
+}
+table.listing a{
+color:#fff;
+}

@@ -1,0 +1,124 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+
+ *= require_tree .
+  *= require_self
+*/
+
+body{
+    background-color: #707070;
+    font-family: "Lucida Grande","Lucida Sans Unicode",Verdana, Helvetica, Arial,sans-serif;
+    text-align: center;
+}
+#header,#wrapper{
+    background-color: #fefefe;
+    box-shadow: 6px 0px 15px 3px #222,-6px 0px 15px 3px #222;
+}
+
+/*Header*/
+.top-header-highlight{
+    height:7px;
+    /*background-color: #cecece;*/
+    background-color: #d0e0f1;
+    /*background-color: #e0ebf6;*/
+}
+#top-header-logo{
+    font-size: 46px;
+}
+.top-header-links{
+
+    background-color: #d0e0f1;
+    /*background-color: #e0ebf6;*/
+    /*color:#1b1b1b;*/
+
+    color:#3c3c3c;
+    border-radius:0 0 7px 7px;
+    -moz-border-radius:0 0 7px 7px;
+
+}
+#top-header-links{
+    padding:0 10px;
+    text-align: center;
+}
+#top-header-links a{margin:0 5px;color:#3c3c3c; }
+.main-menu-bar{
+    /*background-color: #134084;*/
+    /*background: -webkit-gradient(linear, left bottom, left top, color-stop(50%,#000), color-stop(100%,#a1a1a1));  for webkit*/
+
+    background-color: #3e4040;
+    /*background-color: #;*/
+    height:45px;
+    color: #7fffd4;
+    overflow: hidden;
+}
+.menu-bar{
+    margin: 15px 5px 0 5px;
+    float: right;
+
+}
+.menu-bar ul,.menu-bar li{
+    display: inline;
+    margin:0 5px;
+}
+
+.menu-bar a{
+    text-decoration: none;
+    padding: 8px 17px 11px;
+    color: #ececec;
+    /*background-color: #2f7fe0;*/
+    /*background-color: #22c3eb;*/
+    /*background-color: #154285;*/
+    /*background-color: #5072b1;*/
+    /*background-color: #4073aa;*/
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 5%, #4096ee 84%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#7abcff), color-stop(84%,#4096ee)); /* Chrome,Safari4+ */
+    /*background: -webkit-linear-gradient(top, #7abcff 5%,#4096ee 84%); *//* Chrome10+,Safari5.1+ */
+    /*background: -o-linear-gradient(top, #7abcff 5%,#4096ee 84%); *//* Opera11.10+ */
+    /*background: -ms-linear-gradient(top, #7abcff 5%,#4096ee 84%); *//* IE10+ */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); *//* IE6-9 */
+    /*background: linear-gradient(top, #7abcff 5%,#4096ee 84%); *//* W3C */
+    -moz-border-radius:12px 12px 0 0;
+    border-radius: 12px 12px 0  0;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    /*-webkit-box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.75), 0px 2px 2px rgba(0, 0, 0, 0.25);*/
+
+
+}
+
+.menu-bar a:hover,.menu-bar a.active{
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#fefefe), to(#dedede), color-stop(.25,#FEFEFE));
+    /*background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#7abcff), to(#cecece), color-stop(.20,#FEFEFE));*/
+   /*background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#7ABCFF), to(#FAFAFA), color-stop(.15,#FEFEFE));*/
+   background:-moz-linear-gradient(top, #fefefe 0%, #fefefe 25%,#dedede 100%);
+   /*background:-moz-linear-gradient(0% 0% 90deg,#7ABCFF, #FAFAFA, #FEFEFE 9%);*/
+
+  color:black;
+
+}
+.highlight-menu{
+
+    height:7px;
+    background-color: #dedede;
+    /*margin-top:20px;*/
+}
+
+/*Sticky Footer*/
+html, body, #wrapper {height: 100%;}
+body > #wrapper { height: auto; min-height: 100%; }
+#content { overflow: auto; padding-bottom: 40px;}
+
+#footer {
+    position: relative;
+    margin-top: -40px; /* negative value of footer height */
+    height: 40px;
+    clear: both;
+}
+
+
+

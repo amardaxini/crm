@@ -7,21 +7,36 @@
       %ul
         - @account.errors.full_messages.each do |msg|
           %li= msg
+  = f.fields_for :users do |user|
+    .field
+      = user.label :email
+    %br
+      = user.email_field :email
+    .field
+      = user.label :password
+    %br
+      = user.password_field :password
+    .field
+      = user.label :password_confirmation
+    %br
+      = user.password_field :password_confirmation
+  %hr
   .field
-    = f.label :name
+    = f.label "Company Name *"
     %br/
     = f.text_field :name
   .field
     = f.label :website
     %br/
     = f.text_field :website
-  .field
-    = f.label :owner_id
-    %br/
-    = f.number_field :owner_id
+
   .field
     = f.label :description
     %br/
     = f.text_area :description
+  %hr
+
+
+
   .actions
     = f.submit

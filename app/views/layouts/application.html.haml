@@ -31,7 +31,10 @@
               %li
                 = link_to "Blog","#",:class => "blog"
               %li
-                = link_to "Account","#",:class => "account"
+                - if current_user
+                  = link_to "Account",account_path(current_user.account),:class => "account"
+                - else
+                  = link_to "Account",accounts_path,:class => "account"
         .highlight-menu
         #content
           %div.grid_16

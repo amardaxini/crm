@@ -1,21 +1,2 @@
-%h1 Listing accounts
-%table.listing
-  %tr
-    %th Name
-    %th Website
-    %th Owner
-    %th Description
-    %th
-    %th
-    %th
-  - @accounts.each do |account|
-    %tr
-      %td= account.name
-      %td= account.website
-      %td= account.owner_id
-      %td= account.description
-      %td= link_to 'Show', account
-      %td= link_to 'Edit', edit_account_path(account)
-      %td= link_to 'Destroy', account, confirm: 'Are you sure?', method: :delete
-%br/
-= link_to 'New Account', new_account_path
+%div
+  = render :partial=>"devise/sessions/new_login",:locals=>{:resource=>User.new,:resource_name=>:user}

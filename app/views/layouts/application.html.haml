@@ -18,23 +18,33 @@
                 |
                 %a{:href => "#"} Logout
               - else
-                = link_to "Signup" ,"#"
-                |#{link_to "Login" ,"#"}
+                = link_to "Signup" ,new_account_path
+                = link_to "Login" ,"#"
           %span.clear
         %span.clear
         .main-menu-bar
           .grid_6
           .menu-bar
-            %ul
+            %ul{:class => active_class}
               %li
-                = link_to "Home",root_path
+                = link_to "Home",root_path,:class=>"home"
               %li
-                %a{:href => "#"} About
+                = link_to "Blog","#",:class => "blog"
               %li
-                %a{:href => "#"} Blog
+                = link_to "Account","#",:class => "account"
         .highlight-menu
-        #content.container_16
-          .grid_16
-      #footer
-        / Footer
-        ssdjsd
+        #content
+          %div.grid_16
+            %div{:class=>"#{main_content_css_class}"}
+              = yield
+
+            %div{:class=>"#{sidebar_css_class}"}
+              = yield :sidebar
+          = clearing_span
+        .push
+     
+  .container_16.footer-row
+    #footer
+      // Footer
+      = yield :javascripts
+      %p Footer

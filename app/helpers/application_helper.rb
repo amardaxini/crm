@@ -31,12 +31,11 @@ def flash_messages
 	def active_class
 		classes = {
 						'home' => 'home',
+						 'accounts'=>"account",
 						"registrations.edit" =>'home',
 						"registrations.new" =>'register',
 						"sessions.new"=>"login",
-						"authentications.index"=>"login",
-						"events"=>"event",
-						"thoughts"=>"thought"
+						
 
 		}
   		classes[controller.controller_name + '.' + controller.action_name] || classes[controller.controller_name] || ''

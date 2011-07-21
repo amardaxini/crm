@@ -24,7 +24,7 @@ gem 'devise'
 group :development do
  gem 'ruby-debug19', :require => 'ruby-debug'
  gem 'unicorn'
-
+	gem "erb2haml"
 end
 group :test do
   # Pretty printed test output

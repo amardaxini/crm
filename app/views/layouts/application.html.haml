@@ -1,0 +1,40 @@
+%html
+  %head
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    .container_16
+      #wrapper
+        .top-header-highlight
+        .top-header.grid_16
+          #top-header-logo.grid_13 CRM
+          .grid_3.top-header-links
+            #top-header-links
+              - if current_user
+                %a{:href => "#"}
+                  = image_tag 'user_16.png'
+                  Amar Daxini
+                |
+                %a{:href => "#"} Logout
+              - else
+                = link_to "Signup" ,"#"
+                |#{link_to "Login" ,"#"}
+          %span.clear
+        %span.clear
+        .main-menu-bar
+          .grid_6
+          .menu-bar
+            %ul
+              %li
+                = link_to "Home",root_path
+              %li
+                %a{:href => "#"} About
+              %li
+                %a{:href => "#"} Blog
+        .highlight-menu
+        #content.container_16
+          .grid_16
+      #footer
+        / Footer
+        ssdjsd

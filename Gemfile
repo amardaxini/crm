@@ -6,7 +6,7 @@ gem 'rails', '3.1.0.rc4'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-
+gem "haml"
 # Asset template engines
 gem 'sass-rails', "~> 3.1.0.rc"
 gem 'coffee-script'
@@ -21,8 +21,11 @@ gem 'devise'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+group :development do
+ gem 'ruby-debug19', :require => 'ruby-debug'
+ gem 'unicorn'
 
+end
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false

@@ -1,0 +1,16 @@
+%p#notice= notice
+%p
+  %b Name:
+  = @account.name
+%p
+  %b Website:
+  = @account.website
+%p
+  %b Owner:
+  = @account.owner_id
+%p
+  %b Description:
+  = @account.description
+= link_to 'Edit', edit_account_path(@account)
+|
+\#{link_to 'Back', accounts_path}

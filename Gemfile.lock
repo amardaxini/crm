@@ -41,6 +41,7 @@ GEM
       execjs
     coffee-script-source (1.1.1)
     columnize (0.3.4)
+    daemons (1.0.10)
     devise (1.4.2)
       bcrypt-ruby (~> 2.1.2)
       orm_adapter (~> 0.0.3)
@@ -52,6 +53,7 @@ GEM
     erubis (2.7.0)
     execjs (1.2.0)
       multi_json (~> 1.0)
+    gem_plugin (0.2.3)
     haml (3.1.2)
     hike (1.1.0)
     hpricot (0.8.4)
@@ -67,6 +69,9 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    mongrel (1.2.0.pre2)
+      daemons (~> 1.0.10)
+      gem_plugin (~> 0.2.3)
     multi_json (1.0.3)
     orm_adapter (0.0.5)
     pg (0.11.0)
@@ -147,6 +152,7 @@ DEPENDENCIES
   erb2haml
   haml
   jquery-rails
+  mongrel (>= 1.2.0.pre2)
   pg
   rails (= 3.1.0.rc4)
   ruby-debug19

@@ -22,11 +22,13 @@ gem 'devise'
 
 # To use debugger
 group :development do
- gem 'ruby-debug19', :require => 'ruby-debug'
- gem 'unicorn'
+	gem 'ruby-debug19', :require => 'ruby-debug'
+	gem 'unicorn'
 	gem "erb2haml"
+	gem 'mongrel', '>= 1.2.0.pre2'
+
 end
 group :test do
-  # Pretty printed test output
-  gem 'turn', :require => false
+	# Pretty printed test output
+	gem 'turn', :require => false
 end

@@ -13,8 +13,7 @@ body{
     text-align: center;
 }
 #header,#wrapper{
-    background-color: #fefefe;
-    box-shadow: 6px 0px 15px 3px #222,-6px 0px 15px 3px #222;
+
 }
 
 /*Header*/
@@ -161,34 +160,49 @@ div#content form.data-form input[type=submit]:hover{
     
 }
 .login_form{
-    background-color: wheat;
+    background-color: #fff;
     margin: 10px;
     padding:5px 0 10px 25px;
+    -webkit-border-radius:10px;
+    -webkit-box-shadow:0 1px 15px rgba(0,0,0,2);
+    /*-moz-box-shadow:0 1px 15px rgba(0,0,0,2);*/
+
+}
+.login_form input[type="label"]{
+      text-shadow: #ff0000 10px;
+}
+.clear{
+    clear: both;
 }
 /*Sticky Footer*/
 
 
-#footer {
-    position: relative;
-    margin-top: -40px; /* negative value of footer height */
-    height: 40px;
-    clear: both;
+/*#footer {*/
+    /*position: relative;*/
+    /*margin-top: -40px; *//* negative value of footer height */
+    /*height: 40px;*/
+    /*clear: both;*/
+/*}*/
+{
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.every-thing {
+   background-color: #fefefe;
+    box-shadow: 6px 0px 15px 3px #222,-6px 0px 15px 3px #222;
+    -moz-box-shadow: 6px 0px 15px 3px #222,-6px 0px 15px 3px #222;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -30px; /* the bottom margin is the negative value of the footer's height */
+    background-color: #
+}
+.footer, .push {
+	height: 30px; /* .push must be the same height as .footer */
 }
 
-#wrapper {
-
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-
-  margin: 0 auto -30px ; /* the bottom margin is the negative value of the footer's height */
-
-
-}
-div.footer-row,div.push {
- height:30px;  /* .push must be the same height as .footer*/
-     clear:both;
-}
 div#footer{
 
   background-color:#2f4a53;
@@ -197,17 +211,16 @@ div#footer{
 
 }
 div#footer p{
-  margin: 0;
+  /*margin: 0;*/
 
 }
 .footer-row{
 
   background-color:#ddd;
-  height:8px;
+  /*height:8px;*/
 }
 div#footer p,div#footer a{
   color:#7aaaa8;
     padding: 10px 5px 5px 10px;
 }
-
 

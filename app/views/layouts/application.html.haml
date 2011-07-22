@@ -4,7 +4,7 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    .container_16
+    .container_16.every-thing
       #wrapper
         .top-header-highlight
         .top-header.grid_16
@@ -23,7 +23,6 @@
           %span.clear
         %span.clear
         .main-menu-bar
-          .grid_6
           .menu-bar
             %ul{:class => active_class}
               %li
@@ -35,18 +34,20 @@
                   = link_to "Account",account_path(current_user.account),:class => "account"
                 - else
                   = link_to "Account",accounts_path,:class => "account"
+            
         .highlight-menu
+
         #content
           %div.grid_16
-            %div{:class=>"#{main_content_css_class}"}
+            %div#main-content{:class=>"#{main_content_css_class}"}
               = yield
-
-            %div{:class=>"#{sidebar_css_class}"}
+              
+            %div#sidebar{:class=>"#{sidebar_css_class}"}
               = yield :sidebar
           = clearing_span
         .push
-     
-  .container_16.footer-row
+
+  .container_16.footer-wrapper
     #footer
       // Footer
       = yield :javascripts

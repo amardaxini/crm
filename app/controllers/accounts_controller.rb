@@ -1,6 +1,7 @@
 class AccountsController < ApplicationController
   # GET /accounts
   # GET /accounts.json
+	before_filter :authenticate_user!,:except=>[:index,:new,:create]
   def index
     @accounts = Account.all
 

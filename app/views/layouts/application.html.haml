@@ -8,16 +8,17 @@
       #wrapper
         .top-header-highlight
         .top-header.grid_16
-          #top-header-logo.grid_13 CRM
-          .grid_3.top-header-links
+          #top-header-logo.grid_12 CRM
+          .grid_4.top-header-links
             #top-header-links
               - if current_user
-                = link_to image_tag('user_16.png')+current_user.email,"#"
-                
-                %a{:href => "#"} Logout
+                = link_to image_tag('user_16.png')+current_user.email,
+                |
+                = link_to "Logout",logout_path
               - else
                 = link_to "Signup" ,new_account_path
-                = link_to "Login" ,"#"
+                |
+                = link_to "Login" ,login_path
           %span.clear
         %span.clear
         .main-menu-bar
